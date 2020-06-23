@@ -16,3 +16,243 @@ Linux (Debian ) --> sudo apt-get install git
 
 Linux (Fedora ) --> sudo yum install git
 
+
+
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git
+$ touch index.html
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git
+$ touch app.js
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git
+$ touch leonelleonel.cpp
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git
+$ git init
+Initialized empty Git repository in C:/Users/Leonel/Desktop/Git/.git/
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git config --global user.name ´zaza´
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git config --global user.name^Czaza´
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git config --global user.name ´srecherche993@gmail.com´
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$  git add leonelleonel.cpp
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   leonelleonel.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git-2.27.0-64-bit.exe
+        app.js
+        index.html
+        learning Git.txt
+
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git rm --cached leonelleonel.cpp
+error: the following file has staged content different from both the
+file and the HEAD:
+    leonelleonel.cpp
+(use -f to force removal)
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git add leonelleonel.cpp
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ gi status
+bash: gi: command not found
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   leonelleonel.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git-2.27.0-64-bit.exe
+        app.js
+        index.html
+        learning Git.txt
+
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git add index.html
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   leonelleonel.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git-2.27.0-64-bit.exe
+        app.js
+        learning Git.txt
+
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git add *html
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git rm --cached index.html
+rm 'index.html'
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   leonelleonel.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git-2.27.0-64-bit.exe
+        app.js
+        index.html
+        learning Git.txt
+
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git add .
+git status
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Git-2.27.0-64-bit.exe
+        new file:   app.js
+        new file:   index.html
+        new file:   learning Git.txt
+        new file:   leonelleonel.cpp
+
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$  git commit
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Leonel@DESKTOP-E096E7N.(none)')
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git congig --global user.name "zaza"
+git: 'congig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git config -- global user.name " yaya"
+error: key does not contain a section: global
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git config --global user.name "leo"
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git config --global user.email "srecherche993@gmail.com"
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git add .
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Git-2.27.0-64-bit.exe
+        new file:   app.js
+        new file:   index.html
+        new file:   learning Git.txt
+        new file:   leonelleonel.cpp
+
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git commit
+[master (root-commit) 52cc923]  Initial commit
+ 5 files changed, 34 insertions(+)
+ create mode 100644 Git-2.27.0-64-bit.exe
+ create mode 100644 app.js
+ create mode 100644 index.html
+ create mode 100644 learning Git.txt
+ create mode 100644 leonelleonel.cpp
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ gi status
+bash: gi: command not found
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   app.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git add .
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git commit  -m "changed app.js"
+[master 8acdc6e] changed app.js
+ 1 file changed, 1 insertion(+)
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Leonel@DESKTOP-E096E7N MINGW64 ~/Desktop/Git (master)
+$
+
+
+
