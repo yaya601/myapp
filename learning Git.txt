@@ -1,0 +1,18 @@
+ git init : initializes a git repository ( create a .git project in your folder)
+
+ git add <file> add file that you specify
+
+git status ( check status of wrking tree
+
+git commit (commit changes in index)
+
+git push ( push to remote repository)
+
+git pull ( pull latest from remote repositoory)
+
+git clone ( clone repository into a new directory )
+
+Linux (Debian ) --> sudo apt-get install git
+
+Linux (Fedora ) --> sudo yum install git
+
